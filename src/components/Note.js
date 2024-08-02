@@ -54,6 +54,7 @@ const Button = styled.button`
   margin-top: 10px;
   &:hover {
     background: #e65c50;
+     font-family: "Caveat", cursive;
   }
 `;
 
@@ -67,11 +68,13 @@ const Note = () => {
     <NoteContainer>
       <NoteText>Ada pesan <br></br> untuk kamu....</NoteText>
       <Sticker src={sticker} alt="Sticker" />
-      <Button onClick={openModal}>Klik aku </Button>
+      <Button onClick={openModal}>Lihat pesan... </Button>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <h2>Pesan untuk kamu yang terspesial~~</h2>
         <p>
-        Happy Girlfriend Day, sayangku! Di hari yang istimewa ini, aku ingin kamu tahu betapa bersyukurnya aku memiliki kamu di hidupku. Setiap senyumanmu adalah sinar matahari yang menerangi hariku, dan setiap pelukanmu adalah rumah yang paling nyaman untuk hatiku. Aku mencintaimu lebih dari kata-kata yang bisa menggambarkan, dan aku akan selalu berusaha untuk membuatmu bahagia. Terima kasih telah menjadi pacar yang luar biasa. 💖        </p>
+        Happy Girlfriend Day, Ayanggg! Di hari yang istimewa ini, aku sangat bersyukur aku memiliki kamu di hidupku. 
+        Senyumanmu yang manis itu seperti sinar matahari yang menerangi hari-hariku. 
+        Aku cintaa kamu, dan aku akan selalu berusaha untuk membuatmu bahagia. Makasih telah menjadi orang yang spesial dan luar biasa. 💖 </p>
       </Modal>
     </NoteContainer>
   );

@@ -54,7 +54,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     <ModalOverlay isOpen={isOpen} onClick={onClose}>
       <ModalContent onClick={(e) => e.stopPropagation()}>
         {children}
-        <CloseButton onClick={onClose}>Close</CloseButton>
+        <CloseButton onClick={onClose}>tutup</CloseButton>
       </ModalContent>
     </ModalOverlay>
   );
